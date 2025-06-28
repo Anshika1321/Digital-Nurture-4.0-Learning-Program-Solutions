@@ -1,0 +1,10 @@
+CREATE OR REPLACE PROCEDURE ProcessMonthlyInterest IS
+BEGIN
+    UPDATE ACCOUNTS
+    SET BALANCE = BALANCE + BALANCE * 0.01,
+        LASTMODIFIED = SYSDATE
+    WHERE AccountType = 'Savings';
+
+    COMMIT;
+END;
+/
