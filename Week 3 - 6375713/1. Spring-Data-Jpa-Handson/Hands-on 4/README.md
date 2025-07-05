@@ -12,7 +12,7 @@ The folder contains:
 
 - **Hibernate**: An ORM framework that implements JPA. It adds additional features like HQL, caching, lazy loading, etc.
 
-- **Spring Data JPA**: An abstraction over JPA that eliminates boilerplate code and integrates seamlessly with Spring Boot. It uses repositories and provides automatic CRUD implementation.
+- **Spring Data JPA**: An abstraction over JPA that eliminates boilerplate code and integrates seamlessly with Spring Boot. It uses repositories and provides automatic CRUD implementations.
 
 ## 📘 Key Takeaways
 
