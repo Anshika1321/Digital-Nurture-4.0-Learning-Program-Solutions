@@ -59,7 +59,7 @@ Now the book entry will be shown:
 
 📁 Folder Structure
 
-LibraryManagement9/
+<pre>LibraryManagement9/
 ├── code/
 │   ├── com/cognizant/LibraryManagement9/
 │   │   ├── Book.java
@@ -71,4 +71,4 @@ LibraryManagement9/
 │   ├── Output1.png  (Tomcat started line)
 │   ├── Output2.png  (Initial browser response [])
 │   ├── Output3.png  (curl POST and result)
-│   └── Output4.png  (Browser shows added book)
+│   └── Output4.png  (Browser shows added book)</pre>
