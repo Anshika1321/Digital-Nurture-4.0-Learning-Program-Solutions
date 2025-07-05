@@ -37,7 +37,7 @@ The library management application requires a central configuration for beans an
 
 ## 📁 Folder Structure
 
-LibraryManagement/
+<pre>LibraryManagement/
 ├── code/
 │ ├── com/library/service/BookService.java
 │ ├── com/library/repository/BookRepository.java
@@ -45,7 +45,7 @@ LibraryManagement/
 │ ├── applicationContext.xml
 │ └── pom.xml
 ├── output/
-│ └── Output.png
+│ └── Output.png</pre>
 
 
 - `LibraryManagement/` — Full working Maven project.
