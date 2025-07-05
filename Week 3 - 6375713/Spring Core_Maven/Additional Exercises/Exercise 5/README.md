@@ -47,9 +47,6 @@ LibraryManagement/
 ├── output/
 │ └── Output.png
 
-yaml
-Copy
-Edit
 
 - `LibraryManagement/` — Full working Maven project.
 - `code/` — Core logic and configuration files required for the exercise.
