@@ -5,7 +5,7 @@ Each subfolder corresponds to a specific hands-on exercise, including working pr
 
 Below is the detailed structure of the Week 4 repository:
 
-📁 week-4
+<pre>📁 week-4
 └── 📁 spring-rest-using-spring-boot-3
  ├── 📁 1.spring-rest-handson
  │ ├── 📁 handson1
@@ -70,4 +70,4 @@ Below is the detailed structure of the Week 4 repository:
   │ │ ├── 🖼️ console-output.png
   │ │ └── 🖼️ token-response-testing.png
   │ ├── 📁 spring-learn2 (Full working project)
-  └── 📄 README.md
+  └── 📄 README.md</pre>
