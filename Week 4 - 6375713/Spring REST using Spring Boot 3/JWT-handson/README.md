@@ -48,7 +48,7 @@ curl -s -u user:pwd http://localhost:8090/authenticate
    - It includes the actual folder structure under `src/main/java/...`, proper package names, and `pom.xml` for execution.
    - You can directly import and run this in any IDE like Eclipse or IntelliJ.
 
-📁 Folder structure- JWT-hands-on
+<pre>📁 Folder structure- JWT-hands-on
         └── 📁 Create authentication service that returns JWT
             ├── 📁 code
             │   ├── AuthenticationController.java
@@ -62,7 +62,7 @@ curl -s -u user:pwd http://localhost:8090/authenticate
             │   ├── 🖼️ Console Output - 02.png
             │   ├── 🖼️ Postman Output.png
             │   └── 🖼️ Terminal Output.png
-            └── 📁 spring-learn2  # Full working Maven project (can be imported into Eclipse/IntelliJ)
+            └── 📁 spring-learn2  # Full working Maven project (can be imported into Eclipse/IntelliJ)</pre>
              
 --------------------------------------------------------
 ✅ Summary of What This Exercise Covers:
