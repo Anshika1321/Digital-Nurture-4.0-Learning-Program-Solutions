@@ -36,7 +36,7 @@ Each exercise folder contains:
 - A `code` folder: Only includes the files necessary to demonstrate that exercise.
 - An `output` folder: Screenshots of console logs and Postman response for the APIs.
 
-📁 3.spring-rest-handson
+<pre>📁 3.spring-rest-handson
             ├── 📁 employee-managements  # ✅ Full working Maven Spring Boot project (all hands-ons together)
             │   ├── 📄 pom.xml
             │   ├── 📁 src
@@ -76,7 +76,7 @@ Each exercise folder contains:
             │   │   └── 📄 EmployeeManagementsApplication.java
             │   └── 📁 output
             │       ├── 🖼️ console_logs.png
-            │       └── 🖼️ testing-postman_departments.png
+            │       └── 🖼️ testing-postman_departments.png</pre>
 -------------------------------------------------------
 🧩 Hands-On Exercises Summary:
 -------------------------------------------------------
