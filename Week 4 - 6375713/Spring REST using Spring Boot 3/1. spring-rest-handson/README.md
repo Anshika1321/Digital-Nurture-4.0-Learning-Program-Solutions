@@ -33,18 +33,18 @@ The repository is organized into clearly separated folders for easy access and v
 
 #### ✅ What was done:
 
--> Created a Spring Boot project using Spring Initializr.
+🔸 Created a Spring Boot project using Spring Initializr.
 
--> Group: `com.cognizant`
+🔸 Group: `com.cognizant`
 
--> Artifact: `spring-learn`
+🔸 Artifact: `spring-learn`
 
--> Dependencies: `Spring Web`, `Spring Boot DevTools`
+🔸 Dependencies: `Spring Web`, `Spring Boot DevTools`
 
--> Edited the main class `SpringLearnApplication.java` to add:
+🔸 Edited the main class `SpringLearnApplication.java` to add:
   - Logging inside the `main()` method
 
--> Verified the build using Maven:
+🔸 Verified the build using Maven:
   mvn clean package -Dhttp.proxyHost=proxy.cognizant.com -Dhttp.proxyPort=6050 -Dhttps.proxyHost=proxy.cognizant.com -Dhttps.proxyPort=6050 -Dhttp.proxyUser=123456
 
 ✅ Output and success confirmation are provided in the Hands On 1/output/ folder.
@@ -54,38 +54,34 @@ The repository is organized into clearly separated folders for easy access and v
 1. Hands On 1/code/: Contains edited SpringLearnApplication.java
 
 2. Hands On 1/output/: Contains screenshots of:
-
-  -Build success
-
-  -Console output showing "Inside main"
+   -Build success
+   -Console output showing "Inside main"
 
 ### 🔹 Hands-On 2: Spring Core – Load SimpleDateFormat from Spring Configuration XML 
 
 
 ✅ What was done:
--> Added a date-format.xml file under src/main/resources
+🔸 Added a date-format.xml file under src/main/resources
 
--> Defined a bean of type SimpleDateFormat with pattern dd/MM/yyyy
+🔸 Defined a bean of type SimpleDateFormat with pattern dd/MM/yyyy
 
--> Added displayDate() method in SpringLearnApplication.java:
+🔸 Added displayDate() method in SpringLearnApplication.java:
 
--> Loaded the XML config using ClassPathXmlApplicationContext
+🔸 Loaded the XML config using ClassPathXmlApplicationContext
 
--> Retrieved the date format bean
+🔸 Retrieved the date format bean
 
--> Parsed a string to date and logged the result
+🔸 Parsed a string to date and logged the result
 
 ✅ Output confirming the parsed date is included
 
 📂 Folder Details:
 
 1. Hands On 2/code/: Contains:
+   -Updated SpringLearnApplication.java
+   -date-format.xml
 
-  -Updated SpringLearnApplication.java
-
-  -date-format.xml
-
-2. Hands On 2/output/: Contains parsed date log screenshot
+3. Hands On 2/output/: Contains parsed date log screenshot
 
 🛠 Build & Run Instructions
 
