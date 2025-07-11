@@ -13,7 +13,7 @@ The repository is organized into clearly separated folders for easy access and v
 
 ## 📁 Project Structure
 
-📁 1.spring-rest-handson
+<pre>📁 1.spring-rest-handson
         ├── 📁 handson1
         │   ├── 📁 code
         │   └── 📁 output
@@ -24,7 +24,7 @@ The repository is organized into clearly separated folders for easy access and v
         │   └── 📁 output
         │       ├── 🖼️ console-output.png     
         ├── 📁 spring-learn  # Full working project for handson1 & handson2
-        └── 📄 README.md
+        └── 📄 README.md</pre>
 ---
 
 ## 🧪 Hands-On Exercises
