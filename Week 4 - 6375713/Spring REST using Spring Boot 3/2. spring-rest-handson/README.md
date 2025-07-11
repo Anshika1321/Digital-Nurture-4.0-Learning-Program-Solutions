@@ -8,7 +8,7 @@ This repository contains hands-on exercises for learning Spring Boot RESTful Web
 
 All content is inside the `2.spring-rest-hands-on` folder. Inside it, you will find:
 
-📁 2.spring-rest-hands-on
+<pre>📁 2.spring-rest-hands-on
         ├── 📁 Hello World RESTful Web Service
         │   ├── 📁 code
         │   └── 📁 output
@@ -26,15 +26,15 @@ All content is inside the `2.spring-rest-hands-on` folder. Inside it, you will f
         │       ├── 🖼️ console-output.png (contains both run + test)
         │       └── 🖼️ testing-output-country-code.png
         ├── 📁 spring-learn2  (Full working project combining all exercises)
-        └── 📄 README.md
+        └── 📄 README.md</pre>
 
 ## ✅ Project Summary
 
-| Exercise | Description | Endpoint |
+<pre>| Exercise | Description | Endpoint |
 |----------|-------------|----------|
 | Hello World REST | Create a basic REST service that returns `"Hello World!!"` with logs | `GET /hello` |
 | Country REST by Bean | Return a `Country` object (India) loaded from Spring XML config | `GET /country` |
-| Country by Code | Return a `Country` based on code with case-insensitive match from XML list | `GET /countries/{code}` |
+| Country by Code | Return a `Country` based on code with case-insensitive match from XML list | `GET /countries/{code}` |</pre>
 
 Each `code/` folder includes only the source code and configuration specific to that exercise.
 
