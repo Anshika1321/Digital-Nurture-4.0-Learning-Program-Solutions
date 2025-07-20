@@ -3,7 +3,7 @@ This Week 5 repository is focused on Microservices architecture with Eureka Disc
 
 Each section is organized into self-contained exercises including full Maven projects, code snippets, screenshots of outputs, and documentation.
 
-📁 Week 5 - 6375713
+<pre>📁 Week 5 - 6375713
 │
 ├── 📄 README.md
 │
@@ -79,4 +79,4 @@ Each section is organized into self-contained exercises including full Maven pro
         │   ├── 📁 output         # Postman/console screenshots
         │   └── 📁 loans          # Full Maven project – Loan service
         │
-        └── 📁 output             # Combined outputs for account and loan microservices
+        └── 📁 output             # Combined outputs for account and loan microservices</pre>
