@@ -20,7 +20,7 @@ You will:
 
 🏗️ Project Folder Structure
 
-📁 Creating Microservices for account and loan
+<pre>📁 Creating Microservices for account and loan
 ├── 📁 account-microservice
 │   ├── 📁 code                  # Required source files
 │   ├── 📁 output                # Console and Postman screenshots
@@ -32,7 +32,7 @@ You will:
 │   └── 📁 loans                 # Full Maven project (importable in IDE)
 │
 ├── 📁 output                   # Contains screenshots of console outputs for both services
-└── 📄 README.md                # This documentation
+└── 📄 README.md                # This documentation</pre>
 
 ## ✅ What You Will Build
 
