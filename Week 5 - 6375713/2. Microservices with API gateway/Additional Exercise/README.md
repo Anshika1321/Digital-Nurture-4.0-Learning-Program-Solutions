@@ -54,7 +54,7 @@ Each subfolder (`Accounts`, `Loans`, etc.) includes:
 
 ---
 
-📁 Folder Structure
+<pre>📁 Folder Structure
 └── 📁 Create Eureka Discovery Server and Register Microservices
     ├── 📁 accounts                     # Full working Maven project for Accounts microservice (Eureka client)
     │
@@ -118,7 +118,7 @@ Each subfolder (`Accounts`, `Loans`, etc.) includes:
     │       # - console-output-02.png
     │       # - eureka-registered.png (actual file names: eureka-account.png, eureka-loan.png, etc.)
     │
-    └── 📄 README.md                   # This file (project documentation)
+    └── 📄 README.md                   # This file (project documentation)</pre>
 
 ---
 
