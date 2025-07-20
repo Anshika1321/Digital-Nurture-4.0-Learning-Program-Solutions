@@ -1,4 +1,4 @@
-📦 Project Repository Overview – Week 5
+## 📦 Project Repository Overview – Week 5
 This Week 5 repository is focused on Microservices architecture with Eureka Discovery Server and Spring Cloud API Gateway, using Spring Boot 3. It covers registering services with Eureka, service-to-service communication, gateway routing, and exposing endpoints for account and loan management.
 
 Each section is organized into self-contained exercises including full Maven projects, code snippets, screenshots of outputs, and documentation.
