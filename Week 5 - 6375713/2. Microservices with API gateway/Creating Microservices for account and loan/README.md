@@ -1,10 +1,10 @@
-🏦 Creating Microservices for Account and Loan
+# 🏦 Creating Microservices for Account and Loan
 
 This hands-on exercise demonstrates how to create two independent Spring Boot microservices — Account Service and Loan Service — using Spring Boot 3 and Maven, without any backend or database connectivity.
 
 Each microservice is built as a separate Maven project with its own pom.xml, application configuration, and REST controller.
 
-📚 Exercise Overview
+## 📚 Exercise Overview
 
 You will:
 
@@ -34,7 +34,7 @@ You will:
 ├── 📁 output                   # Contains screenshots of console outputs for both services
 └── 📄 README.md                # This documentation
 
-✅ What You Will Build
+## ✅ What You Will Build
 
 | Microservice        | Endpoint                     | Port  | Description                          |
 |---------------------|------------------------------|-------|--------------------------------------|
@@ -42,7 +42,7 @@ You will:
 | **Loan Service**    | `GET /loans/{number}`        | 8081  | Returns loan info (dummy data)       |
 
 ---
-⚙️ Technologies Used
+## ⚙️ Technologies Used
 
 ▸ Java 17+
 
@@ -56,7 +56,7 @@ You will:
 
 ▸ Postman (for testing)
 
-🚀 Steps to Run
+## 🚀 Steps to Run
 
 1️⃣ Account Microservice
 
@@ -87,7 +87,7 @@ public Account getAccount(@PathVariable String number) {
 
 GET http://localhost:8080/accounts/00987987973432
 
-2️⃣ Loan Microservice
+## 2️⃣ Loan Microservice
 
 ▸ Repeat the same process.
 
@@ -110,7 +110,7 @@ public Loan getLoan(@PathVariable String number) {
 
 GET http://localhost:8081/loans/H00987987972342
 
-🔍 Sample JSON Responses
+## 🔍 Sample JSON Responses
 
 📦 Account Microservice
 
@@ -130,7 +130,7 @@ GET http://localhost:8081/loans/H00987987972342
   "tenure": 18
 }
 
-📷 Output Proof (Screenshots)
+## 📷 Output Proof (Screenshots)
 
 ▸ Each microservice’s output/ folder contains:
 
@@ -142,7 +142,7 @@ GET http://localhost:8081/loans/H00987987972342
 
     - testing-output.png – Postman result screenshot
 
-📌 Notes
+## 📌 Notes
 
 ▸ Both services must run on different ports (default 8080 for Account, 8081 for Loan)
 
