@@ -150,4 +150,3 @@ Refer to the `Outputs` folder for sample screenshots that show:
 ---
 
 Feel free to use this structure to understand, learn, or present a microservices-based solution using Spring Cloud and Eureka.
-
