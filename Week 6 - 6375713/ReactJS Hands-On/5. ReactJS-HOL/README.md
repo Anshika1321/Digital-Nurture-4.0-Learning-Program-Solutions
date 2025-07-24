@@ -73,9 +73,7 @@ dt {
   font-weight: 500;
 }
 ```
-Edit CohortDetails.js Component
-
-Example:
+- Edit CohortDetails.js Component
 ```jsx
 import React from "react";
 import styles from "./CohortDetails.module.css";
