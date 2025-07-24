@@ -1,0 +1,162 @@
+ReactJS Hands-On Lab – 6. ReactJS-HOL
+
+📁 Folder Structure
+
+6.ReactJS-HOL/
+│
+├── 📂 codes/                              # Contains source code components and mock data
+│   ├── Trainer.js                         # Trainer class definition
+│   ├── TrainersMock.js                    # Mock trainer data
+│   ├── Home.js                            # Home component
+│   ├── TrainerList.js                     # List view with navigation links
+│   ├── TrainerDetails.js                  # Detailed trainer info using URL param
+│   └── App.js                             # Main component with routing configuration
+│
+├── 📂 output/                             # Screenshots captured during execution
+│   ├── home-output.png           # Screenshot of Home component
+│   ├── trainers-list-output.png      # Screenshot of Trainers List
+│   ├── trainer-details-output.png    # Screenshot of Trainer Details
+│   ├── app-creation-success.png      # React app created successfully
+│   └── webpack-compiled-output       # Webpack build completed in VS Code
+│
+├── 📂 TrainersApp/                        # Fully working React Router project
+│   ├── node_modules/
+│   ├── public/
+│   ├── src/
+│   │   ├── Trainer.js
+│   │   ├── TrainersMock.js
+│   │   ├── Home.js
+│   │   ├── TrainerList.js
+│   │   ├── TrainerDetails.js
+│   │   └── App.js
+│   └── package.json
+│
+├── 📄 6. ReactJS-HOL.docx                  # Word file containing answers to objective questions  
+└── 📄 README.md                            # This file
+
+📌 Objective
+This hands-on lab demonstrates how to create a Single Page Application (SPA) using React Router, enabling routing and parameter passing for components.
+
+✅ What You'll Learn
+
+- Importance and benefits of using React Router
+
+- Router components: BrowserRouter, Route, Routes, Link
+
+- URL parameter passing with useParams
+
+- Building navigation with reusable and routed components
+
+📝 A detailed Word document answering the objective questions is provided in the file: 6. ReactJS-HOL.docx.
+
+⚙️ Prerequisites
+
+- Node.js and npm
+
+- Visual Studio Code
+
+🚀 Steps Followed
+
+- Create App
+npx create-react-app TrainersApp
+cd TrainersApp
+code .
+
+- Install React Router
+npm install react-router-dom
+
+- Define Trainer Class
+File: Trainer.js
+
+class Trainer {
+  constructor(trainerId, name, email, phone, technology, skills) {
+    this.trainerId = trainerId;
+    this.name = name;
+    this.email = email;
+    this.phone = phone;
+    this.technology = technology;
+    this.skills = skills;
+  }
+}
+
+export default Trainer;
+
+- Mock Data
+File: TrainersMock.js
+Create an array of Trainer objects and export it for use in list/details components.
+
+- Create Components
+
+    - Home.js
+      Displays a welcome/home message.
+
+    - TrainerList.js
+
+       - Accepts data as props and displays trainer names as clickable Link       elements.
+
+      - Uses react-router-dom's Link to route to each trainer's detail view.
+
+    - TrainerDetails.js
+
+      - Uses useParams to extract trainer ID from URL.
+
+      - Finds trainer in mock data and displays detailed info.
+
+- Configure Routes
+File: App.js
+
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import Home from "./Home";
+import TrainerList from "./TrainerList";
+import TrainerDetails from "./TrainerDetails";
+
+function App() {
+  return (
+    <BrowserRouter>
+      <nav>
+        <Link to="/">Home</Link> | <Link to="/trainers">Trainers</Link>
+      </nav>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/trainers" element={<TrainerList />} />
+        <Route path="/trainers/:id" element={<TrainerDetails />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+export default App;
+
+- Run the App
+npm start
+
+- View Output
+Open browser and go to: http://localhost:3000
+
+📷 Output Screenshots
+
+- Found in /output/ folder:
+
+    - home-output.png – Home component view
+
+    - trainers-list-output.png – Clickable list of trainer names
+
+    - trainer-details-output.png – Detailed trainer info from URL param
+    
+    - app-creation-success.png – React app created successfully
+
+    - webpack-compiled-output - Webpack build completed in VS Code
+
+
+✅ Completion Status
+
+- Routing system setup and navigation links configured
+
+- Data passed via URL using useParams
+
+- Trainer list and details rendered successfully
+
+- All objectives met and documented in 6. ReactJS-HOL.docx
+
+- Code, screenshots, and structure provided for validation
+
