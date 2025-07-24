@@ -65,15 +65,15 @@ This hands-on lab teaches the basics of setting up and running a ReactJS Single-
 
 Replace existing content with:
 
-<pre>function App() {
+```jsx
+function App() {
   return (
-    <div className="App">
-      <h1>Welcome to the first session of React</h1>
-    </div>
+    <h1>Welcome to the first session of React</h1>
   );
 }
 
-export default App;</pre>
+export default App;
+```
 
 - Run the App
 <pre>npm start</pre>
