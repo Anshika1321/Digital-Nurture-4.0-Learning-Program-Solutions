@@ -44,16 +44,20 @@ This hands-on lab teaches the basics of setting up and running a ReactJS Single-
 - Visual Studio Code
 
 # 🚀 Steps Followed
-- Install Node.js and npm
+- Install Node.js and np
+  
 Visit: https://nodejs.org/en/download/
 
 - Install create-react-app globally
+  
 npm install -g create-react-app
 
 - Create the App
+
 npx create-react-app myfirstreact
 
 - Navigate into the App Folder
+
 cd myfirstreact
 
 - Open in Visual Studio Code
@@ -74,10 +78,12 @@ function App() {
 
 export default App;
 
--Run the App
+- Run the App
+
 npm start
 
 - View Output
+
 Open browser and go to: http://localhost:3000
 
 # 📷 Output Screenshots
