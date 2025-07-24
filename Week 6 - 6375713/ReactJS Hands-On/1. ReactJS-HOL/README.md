@@ -1,8 +1,8 @@
-ReactJS Hands-On Lab – 1. ReactJS-HOL
+## ReactJS Hands-On Lab – 1. ReactJS-HOL
 
-📁 Folder Structure
+# 📁 Folder Structure
 
-1.ReactJS-HOL/
+<pre>1.ReactJS-HOL/
 │
 ├── 📂 codes/             # Contains source code snippets used in each exercise
 │   └── App.js            # Modified App.js to display heading as instructed
@@ -20,12 +20,12 @@ ReactJS Hands-On Lab – 1. ReactJS-HOL
 │   └── package.json
 │
 ├── 📄 1. ReactJS-HOL.docx # Word file containing answers to objective questions
-└── 📄 README.md            # This file
+└── 📄 README.md            # This file</pre>
 
-📌 Objective
+# 📌 Objective
 This hands-on lab teaches the basics of setting up and running a ReactJS Single-Page Application (SPA).
 
-✅ What You'll Learn
+# ✅ What You'll Learn
 - What is SPA and MPA
 
 - Benefits and differences between SPA and MPA
@@ -38,12 +38,12 @@ This hands-on lab teaches the basics of setting up and running a ReactJS Single-
 
 📝 A detailed Word document answering the objective questions is provided in the file: 1. ReactJS-HOL.docx.
 
-⚙️ Prerequisites
+# ⚙️ Prerequisites
 - Node.js and npm
 
 - Visual Studio Code
 
-🚀 Steps Followed
+# 🚀 Steps Followed
 - Install Node.js and npm
 Visit: https://nodejs.org/en/download/
 
@@ -80,7 +80,7 @@ npm start
 - View Output
 Open browser and go to: http://localhost:3000
 
-📷 Output Screenshots
+# 📷 Output Screenshots
 - Found in /output/ folder:
 
     - app-creation-success.png – CLI showing successful app creation
@@ -89,7 +89,7 @@ Open browser and go to: http://localhost:3000
 
     - browser-output.png – Final rendered result in the browser
 
-✅ Completion Status
+# ✅ Completion Status
 - Project successfully created
 
 - Welcome message displayed as expected
