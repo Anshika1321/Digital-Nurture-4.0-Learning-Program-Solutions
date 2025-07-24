@@ -87,14 +87,27 @@ Create an array of Trainer objects and export it for use in list/details compone
 
 - Create Components
 
-    - Home.js
-      Displays a welcome/home message.
+    - Home.js: Displays a welcome/home message.
+```jsx
+import React from 'react';
+
+function Home() {
+  return (
+    <div>
+      <h2>Welcome to Trainers Application</h2>
+    </div>
+  );
+}
+
+export default Home;
+```
 
     - TrainerList.js
 
-       - Accepts data as props and displays trainer names as clickable Link       elements.
+       - Accepts data as props and displays trainer names as clickable Link elements.
 
       - Uses react-router-dom's Link to route to each trainer's detail view.
+
 
     - TrainerDetails.js
 
