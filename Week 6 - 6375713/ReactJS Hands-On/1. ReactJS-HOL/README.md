@@ -45,30 +45,27 @@ This hands-on lab teaches the basics of setting up and running a ReactJS Single-
 
 # 🚀 Steps Followed
 - Install Node.js and np
-  
-Visit: https://nodejs.org/en/download/
+  <pre>Visit: https://nodejs.org/en/download/</pre>
 
 - Install create-react-app globally
-  
-npm install -g create-react-app
+  <pre>npm install -g create-react-app</pre>
 
 - Create the App
-
-npx create-react-app myfirstreact
+<pre>npx create-react-app myfirstreact</pre>
 
 - Navigate into the App Folder
-
-cd myfirstreact
+<pre>cd myfirstreact</pre>
 
 - Open in Visual Studio Code
-code .
+
+<pre>code .</pre>
 
 - Modify App.js
-Open src/App.js
+<pre>Open src/App.js</pre>
 
 Replace existing content with:
 
-function App() {
+<pre>function App() {
   return (
     <div className="App">
       <h1>Welcome to the first session of React</h1>
@@ -76,15 +73,13 @@ function App() {
   );
 }
 
-export default App;
+export default App;</pre>
 
 - Run the App
-
-npm start
+<pre>npm start</pre>
 
 - View Output
-
-Open browser and go to: http://localhost:3000
+<pre>Open browser and go to: http://localhost:3000</pre>
 
 # 📷 Output Screenshots
 - Found in /output/ folder:
