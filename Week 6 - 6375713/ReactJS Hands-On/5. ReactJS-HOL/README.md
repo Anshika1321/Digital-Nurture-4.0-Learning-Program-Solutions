@@ -38,7 +38,7 @@ This lab helps understand how to apply styles in React using both CSS Modules an
 
 - Conditional styling based on data
 
-> 📝 All objective answers are available in <pre>5. ReactJS-HOL.docx.</pre>
+>*📝 All objective answers are available in <pre>5. ReactJS-HOL.docx.</pre>*
 
 ## ⚙️ Prerequisites
 - Node.js and npm
