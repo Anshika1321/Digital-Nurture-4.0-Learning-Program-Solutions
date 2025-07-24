@@ -1,25 +1,25 @@
-Week 6 Overview – ReactJS Hands-On Lab
+## Week 6 Overview – ReactJS Hands-On Lab
 This week’s hands-on lab focuses on mastering ReactJS through a series of structured and progressive exercises. Starting from the fundamentals, learners are guided through key concepts such as components, props, state, routing, styling, and lifecycle methods — with each topic implemented as a self-contained React application.
 
-Exercise 1 introduces React by creating a simple application that displays a welcome message using JSX and ReactDOM rendering.
+- **Hands-on 1** introduces React by creating a simple application that displays a welcome message using JSX and ReactDOM rendering.
 
-Exercise 2 covers the creation and usage of multiple class-based components (Home, About, Contact) and their rendering inside a root component.
+- **Hands-on 2** covers the creation and usage of multiple class-based components (Home, About, Contact) and their rendering inside a root component.
 
-Exercise 3 demonstrates function-based components with props for student score calculation, along with styling using external CSS.
+- **Hands-on 3** demonstrates function-based components with props for student score calculation, along with styling using external CSS.
 
-Exercise 4 explores React lifecycle methods like componentDidMount() and componentDidCatch() by fetching and displaying blog posts from a remote API.
+- **Hands-on 4** explores React lifecycle methods like componentDidMount() and componentDidCatch() by fetching and displaying blog posts from a remote API.
 
-Exercise 5 emphasizes styling techniques in React using CSS Modules and conditional inline styles to visually differentiate cohort statuses in a dashboard.
+- **Hands-on 5** emphasizes styling techniques in React using CSS Modules and conditional inline styles to visually differentiate cohort statuses in a dashboard.
 
-Exercise 6 walks through the implementation of React Router to build a SPA with navigation, route parameters, and dynamic trainer detail pages using useParams().
+- **Hands-on 6** walks through the implementation of React Router to build a SPA with navigation, route parameters, and dynamic trainer detail pages using useParams().
 
-Exercise 7 focuses on props and component composition by building a shopping cart system where product details are passed and rendered using props.
+- **Hands-on 7** focuses on props and component composition by building a shopping cart system where product details are passed and rendered using props.
 
-Exercise 8 deals with state management using class components to track people entering and exiting a mall, updating counters through setState() and event handling.
+- **Hands-on 8** deals with state management using class components to track people entering and exiting a mall, updating counters through setState() and event handling.
 
 Each application includes complete source code, a dedicated React project folder, and screenshots demonstrating successful execution, making the Week 6 repository a comprehensive collection of practical ReactJS skills.
 
-📁 Week 6 - 6375713  
+<pre>📁 Week 6 - 6375713  
 │  
 ├── 📄 README.md  
 │  
@@ -72,4 +72,4 @@ Each application includes complete source code, a dedicated React project folder
         ├── 📁 counterapp                # Full React app  
         ├── 📁 codes                     # CountPeople.js, App.js  
         ├── 📁 output                    # Screenshot – entry/exit count increment  
-        └── 📄 8. ReactJS-HOL.docx  
+        └── 📄 8. ReactJS-HOL.docx</pre>
