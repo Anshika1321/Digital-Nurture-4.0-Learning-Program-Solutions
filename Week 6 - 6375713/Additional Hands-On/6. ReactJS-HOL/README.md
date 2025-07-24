@@ -1,8 +1,8 @@
-ReactJS Hands-On Lab – 6. ReactJS-HOL
+## ReactJS Hands-On Lab – 6. ReactJS-HOL
 
 📁 Folder Structure
 
-6.ReactJS-HOL/
+<pre>6.ReactJS-HOL/
 │
 ├── 📂 codes/                              # Contains source code components and mock data
 │   ├── Trainer.js                         # Trainer class definition
@@ -32,12 +32,12 @@ ReactJS Hands-On Lab – 6. ReactJS-HOL
 │   └── package.json
 │
 ├── 📄 6. ReactJS-HOL.docx                  # Word file containing answers to objective questions  
-└── 📄 README.md                            # This file
+└── 📄 README.md                            # This file</pre>
 
-📌 Objective
+## 📌 Objective
 This hands-on lab demonstrates how to create a Single Page Application (SPA) using React Router, enabling routing and parameter passing for components.
 
-✅ What You'll Learn
+## ✅ What You'll Learn
 
 - Importance and benefits of using React Router
 
@@ -49,13 +49,13 @@ This hands-on lab demonstrates how to create a Single Page Application (SPA) usi
 
 📝 A detailed Word document answering the objective questions is provided in the file: 6. ReactJS-HOL.docx.
 
-⚙️ Prerequisites
+## ⚙️ Prerequisites
 
 - Node.js and npm
 
 - Visual Studio Code
 
-🚀 Steps Followed
+## 🚀 Steps Followed
 
 - Create App
 npx create-react-app TrainersApp
@@ -133,7 +133,7 @@ npm start
 - View Output
 Open browser and go to: http://localhost:3000
 
-📷 Output Screenshots
+## 📷 Output Screenshots
 
 - Found in /output/ folder:
 
@@ -148,7 +148,7 @@ Open browser and go to: http://localhost:3000
     - webpack-compiled-output - Webpack build completed in VS Code
 
 
-✅ Completion Status
+## ✅ Completion Status
 
 - Routing system setup and navigation links configured
 
