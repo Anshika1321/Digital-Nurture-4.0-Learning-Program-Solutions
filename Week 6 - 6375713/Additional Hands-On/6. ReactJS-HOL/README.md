@@ -1,8 +1,8 @@
-ReactJS Hands-On Lab – 6. ReactJS-HOL
+# ReactJS Hands-On Lab – 6. ReactJS-HOL
 
-📁 Folder Structure
+## 📁 Folder Structure
 
-6.ReactJS-HOL/
+<pre>6.ReactJS-HOL/
 │
 ├── 📂 codes/                              # Contains source code components and mock data
 │   ├── Trainer.js                         # Trainer class definition
@@ -32,12 +32,12 @@ ReactJS Hands-On Lab – 6. ReactJS-HOL
 │   └── package.json
 │
 ├── 📄 6. ReactJS-HOL.docx                  # Word file containing answers to objective questions  
-└── 📄 README.md                            # This file
+└── 📄 README.md                            # This file</pre>
 
-📌 Objective
+## 📌 Objective
 This hands-on lab demonstrates how to create a Single Page Application (SPA) using React Router, enabling routing and parameter passing for components.
 
-✅ What You'll Learn
+## ✅ What You'll Learn
 
 - Importance and benefits of using React Router
 
@@ -47,27 +47,27 @@ This hands-on lab demonstrates how to create a Single Page Application (SPA) usi
 
 - Building navigation with reusable and routed components
 
-📝 A detailed Word document answering the objective questions is provided in the file: 6. ReactJS-HOL.docx.
+.*📝 A detailed Word document answering the objective questions is provided in the file: 6. ReactJS-HOL.docx.*
 
-⚙️ Prerequisites
+## ⚙️ Prerequisites
 
 - Node.js and npm
 
 - Visual Studio Code
 
-🚀 Steps Followed
+## 🚀 Steps Followed
 
-- Create App
-npx create-react-app TrainersApp
-cd TrainersApp
-code .
+### - Create App
+<pre>npx create-react-app trainersapp</pre>
+<pre>cd trainersapp</pre>
+<pre>code .</pre>
 
-- Install React Router
-npm install react-router-dom
+### - Install React Router
+<pre>npm install react-router-dom</pre>
 
-- Define Trainer Class
-File: Trainer.js
-
+### - Define Trainer Class
+****File: Trainer.js****
+```jsx
 class Trainer {
   constructor(trainerId, name, email, phone, technology, skills) {
     this.trainerId = trainerId;
@@ -80,9 +80,9 @@ class Trainer {
 }
 
 export default Trainer;
-
+```
 - Mock Data
-File: TrainersMock.js
+****File: TrainersMock.js****
 Create an array of Trainer objects and export it for use in list/details components.
 
 - Create Components
@@ -103,8 +103,8 @@ Create an array of Trainer objects and export it for use in list/details compone
       - Finds trainer in mock data and displays detailed info.
 
 - Configure Routes
-File: App.js
-
+****File: App.js****
+```jsx
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Home from "./Home";
 import TrainerList from "./TrainerList";
@@ -126,14 +126,14 @@ function App() {
 }
 
 export default App;
+```
+### - Run the App
+<pre>npm start</pre>
 
-- Run the App
-npm start
+### - View Output
+<pre>Open browser and go to: http://localhost:3000</pre>
 
-- View Output
-Open browser and go to: http://localhost:3000
-
-📷 Output Screenshots
+## 📷 Output Screenshots
 
 - Found in /output/ folder:
 
@@ -148,7 +148,7 @@ Open browser and go to: http://localhost:3000
     - webpack-compiled-output - Webpack build completed in VS Code
 
 
-✅ Completion Status
+## ✅ Completion Status
 
 - Routing system setup and navigation links configured
 
