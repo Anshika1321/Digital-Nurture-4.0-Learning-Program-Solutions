@@ -1,8 +1,8 @@
-ReactJS Hands-On Lab – Styling Components – 5. ReactJS-HOL
+# ReactJS Hands-On Lab – Styling Components – 5. ReactJS-HOL
 
-📁 Folder Structure
+## 📁 Folder Structure
 
-5.ReactJS-HOL/
+<pre>5.ReactJS-HOL/
 │
 ├── 📂 codes/                            # Code used for component styling
 │   ├── CohortDetails.js                 # React component displaying cohort info
@@ -24,12 +24,12 @@ ReactJS Hands-On Lab – Styling Components – 5. ReactJS-HOL
 │   └── package.json
 │
 ├── 📄 5. ReactJS-HOL.docx                # Word file answering objective questions
-└── 📄 README.md                          # This file
+└── 📄 README.md                          # This file</pre>
 
-📌 Objective
+## 📌 Objective
 This lab helps understand how to apply styles in React using both CSS Modules and inline styles in components.
 
-✅ What You'll Learn
+## ✅ What You'll Learn
 - The need for styling in React apps
 
 - Creating and using CSS Modules
@@ -38,27 +38,28 @@ This lab helps understand how to apply styles in React using both CSS Modules an
 
 - Conditional styling based on data
 
-📝 All objective answers are available in 5. ReactJS-HOL.docx.
+> 📝 All objective answers are available in <pre>5. ReactJS-HOL.docx.</pre>
 
-⚙️ Prerequisites
+## ⚙️ Prerequisites
 - Node.js and npm
 
 - Visual Studio Code
 
-🚀 Steps Followed
+## 🚀 Steps Followed
 - Unzip and Set Up the React App
 (Since No Zip was Attached with the Exercise file I have created the react app cohorttracker)
 
 - Unzip the given project folder.
 
 - Open terminal and run:
-npm install
+<pre>npm install</pre>
 
 - Create CSS Module
 Inside src/, create a new file:
 CohortDetails.module.css
 
 Add the following styles:
+```css
 .box {
   width: 300px;
   display: inline-block;
@@ -71,9 +72,11 @@ Add the following styles:
 dt {
   font-weight: 500;
 }
+```
 Edit CohortDetails.js Component
 
 Example:
+```jsx
 import React from "react";
 import styles from "./CohortDetails.module.css";
 
@@ -96,8 +99,9 @@ function CohortDetails({ name, status, duration }) {
 }
 
 export default CohortDetails;
-
+```
 - Render in App.js
+```jsx
 import React from "react";
 import CohortDetails from "./CohortDetails";
 
@@ -111,14 +115,14 @@ function App() {
 }
 
 export default App;
-
+```
 - Run the App
-npm start
+<pre>npm start</pre>
 
 - View in Browser
-Visit: http://localhost:3000
+<pre>Visit: http://localhost:3000</pre>
 
-📷 Output Screenshots
+## 📷 Output Screenshots
 - Found in /output/ folder:
 
     - app-creation-success.png – React app created successfully
@@ -127,7 +131,7 @@ Visit: http://localhost:3000
 
     - webpack-compiled-output - Webpack build completed in VS Code
 
-✅ Completion Status
+## ✅ Completion Status
 - CSS Module created and used
 
 - className and style props applied
