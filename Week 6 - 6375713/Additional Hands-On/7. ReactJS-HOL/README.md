@@ -1,8 +1,8 @@
-ReactJS Hands-On Lab – 7. ReactJS-HOL
+# ReactJS Hands-On Lab – 7. ReactJS-HOL
 
-📁 Folder Structure
+## 📁 Folder Structure
 
-7.ReactJS-HOL/
+<pre>7.ReactJS-HOL/
 │
 ├── 📂 codes/                             # Source code files from the exercise
 │   ├── OnlineShopping.js                 # Main class component with Cart items
@@ -24,12 +24,12 @@ ReactJS Hands-On Lab – 7. ReactJS-HOL
 │   └── package.json
 │
 ├── 📄 7. ReactJS-HOL.docx                # Word file answering objective questions  
-└── 📄 README.md                          # This file
+└── 📄 README.md                          # This file</pre>
 
-📌 Objective
+## 📌 Objective
 This hands-on lab teaches how to use Props, Default Props, and apply reactDOM.render() in a React class-based component setup.
 
-✅ What You'll Learn
+## ✅ What You'll Learn
 
 - What are Props and Default Props
 
@@ -39,88 +39,101 @@ This hands-on lab teaches how to use Props, Default Props, and apply reactDOM.re
 
 - Passing data using Props between components
 
-📝 A detailed Word document answering the objective questions is provided in the file: 7. ReactJS-HOL.docx.
+>*📝 A detailed Word document answering the objective questions is provided in the file: 7. ReactJS-HOL.docx.*
 
-⚙️ Prerequisites
+## ⚙️ Prerequisites
 
 - Node.js and npm
 
 - Visual Studio Code
 
-🚀 Steps Followed
+## 🚀 Steps Followed
 
-- Create React App
-npx create-react-app shoppingapp
+### - Create React App
+<pre>npx create-react-app shoppingapp
 cd shoppingapp
-code .
+code .</pre>
 
-- Create Cart.js Component
-import React from "react";
+### - Create Cart.js Component
 
-class Cart extends React.Component {
+```jsx
+import React, { Component } from 'react';
+
+class Cart extends Component {
   render() {
     return (
-      <div>
-        <h3>Item: {this.props.itemname}</h3>
-        <p>Price: ₹{this.props.price}</p>
-      </div>
+      <tr>
+        <td>{this.props.Itemname}</td>
+        <td>{this.props.Price}</td>
+      </tr>
     );
   }
 }
 
-// Default props (optional)
-Cart.defaultProps = {
-  itemname: "Unknown",
-  price: 0
-};
-
 export default Cart;
+```
 
-- Create OnlineShopping.js Component
-import React from "react";
-import Cart from "./Cart";
+### - Create OnlineShopping.js Component
 
-class OnlineShopping extends React.Component {
-  constructor(props) {
-    super(props);
-    this.items = [
-      { itemname: "Laptop", price: 60000 },
-      { itemname: "Smartphone", price: 25000 },
-      { itemname: "Headphones", price: 2000 },
-      { itemname: "Keyboard", price: 1500 },
-      { itemname: "Mouse", price: 800 }
-    ];
-  }
+```jsx
+import React, { Component } from 'react';
+import Cart from './Cart';
 
+class OnlineShopping extends Component {
   render() {
+    const items = [
+      { Itemname: 'Laptop', Price: 80000 },
+      { Itemname: 'TV', Price: 120000 },
+      { Itemname: 'Washing Machine', Price: 50000 },
+      { Itemname: 'Mobile', Price: 30000 },
+      { Itemname: 'Fridge', Price: 70000 }
+    ];
+
     return (
-      <div>
-        <h1>Shopping Cart</h1>
-        {this.items.map((item, index) => (
-          <Cart key={index} itemname={item.itemname} price={item.price} />
-        ))}
+      <div style={{ textAlign: 'center' }}>
+        <h2 style={{ color: 'green' }}>Items Ordered :</h2>
+        <table border="1" style={{ margin: 'auto' }}>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            {items.map((item, index) => (
+              <Cart
+                key={index}
+                Itemname={item.Itemname}
+                Price={item.Price}
+              />
+            ))}
+          </tbody>
+        </table>
       </div>
     );
   }
 }
 
 export default OnlineShopping;
+```
+### - Render in index.js
 
-- Render in index.js
-import React from "react";
-import ReactDOM from "react-dom/client";
-import OnlineShopping from "./OnlineShopping";
+```jsx
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import OnlineShopping from './OnlineShopping';
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<OnlineShopping />);
+```
 
-- Run the App
-npm start
+### - Run the App
+<pre>npm start</pre>
 
-- View Output
-Open browser and go to: http://localhost:3000
+### - View Output
+<pre>Open browser and go to: http://localhost:3000</pre>
 
-📷 Output Screenshots
+## 📷 Output Screenshots
 
 - Found in /output/ folder:
 
@@ -131,7 +144,7 @@ Open browser and go to: http://localhost:3000
     - webpack-compiled-output - Webpack build completed in VS Code
 
 
-✅ Completion Status
+## ✅ Completion Status
 
 - Props and Default Props successfully implemented
 
