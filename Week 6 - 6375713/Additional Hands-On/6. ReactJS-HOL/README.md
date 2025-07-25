@@ -14,10 +14,11 @@
 │
 ├── 📂 output/                             # Screenshots captured during execution
 │   ├── home-output.png           # Screenshot of Home component
-│   ├── trainers-list-output.png      # Screenshot of Trainers List
-│   ├── trainer-details-output.png    # Screenshot of Trainer Details
-│   ├── app-creation-success.png      # React app created successfully
-│   └── webpack-compiled-output       # Webpack build completed in VS Code
+│   ├── trainers-list-output.png        # Screenshot of Trainers List
+│   ├── trainer-details-output.png      # Screenshot of Trainer-1 Details
+│   ├── trainer-details-output-2.png    # Screenshot of Trainer-2 Details
+│   ├── app-creation-success.png        # React app created successfully
+│   └── webpack-compiled-output         # Webpack build completed in VS Code
 │
 ├── 📂 TrainersApp/                        # Fully working React Router project
 │   ├── node_modules/
@@ -234,6 +235,8 @@ export default App;
     - trainers-list-output.png – Clickable list of trainer names
 
     - trainer-details-output.png – Detailed trainer info from URL param
+    
+    - trainer-details-output-2.png - Detailed trainer-2 info from URL param 
     
     - app-creation-success.png – React app created successfully
 
