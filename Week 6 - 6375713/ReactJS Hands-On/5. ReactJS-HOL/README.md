@@ -5,12 +5,12 @@
 <pre>5.ReactJS-HOL/
 │
 ├── 📂 codes/                            # Code used for component styling
-│   ├── CohortDetails.js                 # React component displaying cohort info
+│   ├── Cohort.js                        # Defines cohort info (data or logic)
+│   ├── CohortDetails.js                 # React component to display the cohort info
 │   ├── CohortDetails.module.css         # CSS Module with class and tag selectors
 │   └── App.js                           # Calls all Components
 │
 ├── 📂 output/                           # Screenshots of final UI and steps
-│   ├── app-creation-success.png          # Screenshot of app creation in CMD
 │   ├── webpack-complied-success.png         # Screenshot of Webpack build success in VS Code
 │   └── browser-output.png          # Screenshot of the output in browser
 │
@@ -18,6 +18,7 @@
 │   ├── node_modules/
 │   ├── public/
 │   ├── src/
+│   │   ├── Cohort.js  
 │   │   ├── CohortDetails.js
 │   │   ├── CohortDetails.module.css
 │   │   └── App.js
@@ -47,7 +48,6 @@ This lab helps understand how to apply styles in React using both CSS Modules an
 
 ## 🚀 Steps Followed
 ### - Unzip and Set Up the React App
-(Since No Zip was Attached with the Exercise file I have created the react app cohorttracker)
 
 ### - Unzip the given project folder.
 
@@ -78,26 +78,34 @@ dt {
 - Edit ****CohortDetails.js**** Component
  
 ```jsx
-import React from "react";
-import styles from "./CohortDetails.module.css";
+import React from 'react';
+import styles from './CohortDetails.module.css';
 
-function CohortDetails({ name, status, duration }) {
-  const headingStyle = {
-    color: status === "ongoing" ? "green" : "blue"
-  };
+const CohortDetails = ({ cohort }) => {
+  const headingColor =
+    cohort.currentStatus.toLowerCase() === 'ongoing' ? 'green' : 'blue';
 
   return (
     <div className={styles.box}>
-      <h3 style={headingStyle}>{name}</h3>
+      <h3 style={{ color: headingColor }}>
+        {cohort.cohortCode}
+      </h3>
       <dl>
-        <dt>Status:</dt>
-        <dd>{status}</dd>
-        <dt>Duration:</dt>
-        <dd>{duration}</dd>
+        <dt>Started On</dt>
+        <dd>{cohort.startDate}</dd>
+
+        <dt>Current Status</dt>
+        <dd>{cohort.currentStatus}</dd>
+
+        <dt>Coach</dt>
+        <dd>{cohort.coachName}</dd>
+
+        <dt>Trainer</dt>
+        <dd>{cohort.trainerName}</dd>
       </dl>
     </div>
   );
-}
+};
 
 export default CohortDetails;
 ```
@@ -105,14 +113,17 @@ export default CohortDetails;
 ### - Render in App.js
 
 ```jsx
-import React from "react";
-import CohortDetails from "./CohortDetails";
+import './App.css';
+import { CohortsData } from './Cohort';
+import CohortDetails from './CohortDetails';
 
 function App() {
   return (
-    <div className="App">
-      <CohortDetails name="React Bootcamp" status="ongoing" duration="4 weeks" />
-      <CohortDetails name="Angular Bootcamp" status="completed" duration="3 weeks" />
+    <div>
+      <h1>Cohorts Details</h1>
+      {CohortsData.map((cohort, index) => (
+        <CohortDetails key={index} cohort={cohort} />
+      ))}
     </div>
   );
 }
@@ -128,8 +139,6 @@ export default App;
 
 ## 📷 Output Screenshots
 - Found in /output/ folder:
-
-    - app-creation-success.png – React app created successfully
 
     - browser-output.png – Final rendered result in the browser
 
