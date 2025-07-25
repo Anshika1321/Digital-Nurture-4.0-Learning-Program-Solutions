@@ -187,6 +187,7 @@ export default TrainerDetails;
 ```
 
 - Configure Routes
+  
 ****-File: App.js****
   
 ```jsx
