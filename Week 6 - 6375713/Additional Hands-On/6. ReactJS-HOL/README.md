@@ -69,21 +69,21 @@ This hands-on lab demonstrates how to create a Single Page Application (SPA) usi
 ****File: Trainer.js****
 ```jsx
 class Trainer {
-  constructor(trainerId, name, email, phone, technology, skills) {
-    this.trainerId = trainerId;
-    this.name = name;
-    this.email = email;
-    this.phone = phone;
-    this.technology = technology;
-    this.skills = skills;
+  constructor(TrainerId, Name, Email, Phone, Technology, Skills) {
+    this.TrainerId = TrainerId;
+    this.Name = Name;
+    this.Email = Email;
+    this.Phone = Phone;
+    this.Technology = Technology;
+    this.Skills = Skills;
   }
 }
 
 export default Trainer;
 ```
+
 - Mock Data
-  ****File: TrainersMock.js****
-  Create an array of Trainer objects and export it for use in list/details components.
+****File: TrainersMock.js:**** Create an array of Trainer objects and export it for use in list/details components.
 ```jsx
 const trainers = [
   {
@@ -106,9 +106,10 @@ const trainers = [
 
 export default trainers;
 ```
-- Create Components
 
-    ****- Home.js:**** Displays a welcome/home message.
+- Create Components
+  
+****- Home.js:**** Displays a welcome/home message.
 ```jsx
 import React from 'react';
 
@@ -123,38 +124,90 @@ function Home() {
 export default Home;
 ```
 
-    - TrainerList.js
+****- TrainerList.js:****
 
-       - Accepts data as props and displays trainer names as clickable Link elements.
+      - Accepts data as props and displays trainer names as clickable Link elements.
 
       - Uses react-router-dom's Link to route to each trainer's detail view.
+      ```jsx
+import React from 'react';
+import { Link } from 'react-router-dom';
 
+function TrainersList({ data }) {
+  return (
+    <div>
+      <h2>Trainer List</h2>
+      <ul>
+        {data.map(trainer => (
+          <li key={trainer.TrainerId}>
+            <Link to={`/trainer/${trainer.TrainerId}`}>{trainer.Name}</Link>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
 
-    - TrainerDetails.js
+export default TrainersList;
+```
+
+****- TrainerDetails.js:**** 
 
       - Uses useParams to extract trainer ID from URL.
 
       - Finds trainer in mock data and displays detailed info.
+```jsx
+import React from 'react';
+import { useParams } from 'react-router-dom';
+import trainers from './TrainersMock';
+
+function TrainerDetails() {
+  const { id } = useParams();
+  const trainer = trainers.find(t => t.TrainerId === parseInt(id));
+
+  if (!trainer) {
+    return <div>Trainer not found</div>;
+  }
+
+  return (
+    <div>
+      <h2>{trainer.Name}'s Details</h2>
+      <p><strong>Email:</strong> {trainer.Email}</p>
+      <p><strong>Phone:</strong> {trainer.Phone}</p>
+      <p><strong>Technology:</strong> {trainer.Technology}</p>
+      <p><strong>Skills:</strong> {trainer.Skills}</p>
+    </div>
+  );
+}
+
+export default TrainerDetails;
+```
 
 - Configure Routes
-****File: App.js****
+****-File: App.js****
 ```jsx
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import Home from "./Home";
-import TrainerList from "./TrainerList";
-import TrainerDetails from "./TrainerDetails";
+import React from 'react';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import Home from './Home';
+import TrainersList from './TrainerList';
+import TrainerDetails from './TrainerDetails';
+import trainers from './TrainersMock';
 
 function App() {
   return (
     <BrowserRouter>
-      <nav>
-        <Link to="/">Home</Link> | <Link to="/trainers">Trainers</Link>
-      </nav>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/trainers" element={<TrainerList />} />
-        <Route path="/trainers/:id" element={<TrainerDetails />} />
-      </Routes>
+      <div style={{ border: "1px solid black", padding: "20px", width: "fit-content" }}>
+        <h1>My Academy Trainers App</h1>
+        <nav>
+          <Link to="/">Home</Link> | <Link to="/trainers">Show Trainers</Link>
+        </nav>
+        <br />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/trainers" element={<TrainersList data={trainers} />} />
+          <Route path="/trainer/:id" element={<TrainerDetails />} />
+        </Routes>
+      </div>
     </BrowserRouter>
   );
 }
