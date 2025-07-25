@@ -83,7 +83,7 @@ export default Trainer;
 ```
 
 - Mock Data
-****File: TrainersMock.js:**** Create an array of Trainer objects and export it for use in list/details components.
+****-File: TrainersMock.js:**** Create an array of Trainer objects and export it for use in list/details components.
 ```jsx
 const trainers = [
   {
@@ -129,7 +129,7 @@ export default Home;
       - Accepts data as props and displays trainer names as clickable Link elements.
 
       - Uses react-router-dom's Link to route to each trainer's detail view.
-      ```jsx
+```jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
 
