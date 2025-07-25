@@ -63,10 +63,10 @@
 
 ### - Create Components Folder
 Under src/, create a folder called Components/
+- Create Component Files
 
-    - Create Component Files
-    
-      ****- Home.js****
+#### Home.js
+
 ```jsx     
 import React from "react";
 
@@ -82,8 +82,8 @@ class Home extends React.Component {
 
 export default Home;
 ```
+#### About.js
 
-      ****- About.js****
 ```jsx
 import React from "react";
 
@@ -100,7 +100,8 @@ class About extends React.Component {
 export default About;
 ```
 
-      ****- Contact.js****
+#### Contact.js
+
 ```jsx
 import React from "react";
 
