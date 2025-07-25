@@ -1,6 +1,6 @@
-## ReactJS Hands-On Lab – 1. ReactJS-HOL
+# ReactJS Hands-On Lab – 1. ReactJS-HOL
 
-# 📁 Folder Structure
+## 📁 Folder Structure
 
 <pre>1.ReactJS-HOL/
 │
@@ -22,10 +22,10 @@
 ├── 📄 1. ReactJS-HOL.docx # Word file containing answers to objective questions
 └── 📄 README.md            # This file</pre>
 
-# 📌 Objective
+## 📌 Objective
 This hands-on lab teaches the basics of setting up and running a ReactJS Single-Page Application (SPA).
 
-# ✅ What You'll Learn
+## ✅ What You'll Learn
 - What is SPA and MPA
 
 - Benefits and differences between SPA and MPA
@@ -36,52 +36,55 @@ This hands-on lab teaches the basics of setting up and running a ReactJS Single-
 
 - Setting up a basic React project using create-react-app
 
-📝 A detailed Word document answering the objective questions is provided in the file: 1. ReactJS-HOL.docx.
+>*📝 A detailed Word document answering the objective questions is provided in the file: 1. ReactJS-HOL.docx.*
 
-# ⚙️ Prerequisites
+## ⚙️ Prerequisites
 - Node.js and npm
 
 - Visual Studio Code
 
-# 🚀 Steps Followed
-- Install Node.js and np
+## 🚀 Steps Followed
+
+### - Install Node.js and np
   <pre>Visit: https://nodejs.org/en/download/</pre>
 
-- Install create-react-app globally
+### - Install create-react-app globally
   <pre>npm install -g create-react-app</pre>
 
-- Create the App
+### - Create the App
 <pre>npx create-react-app myfirstreact</pre>
 
-- Navigate into the App Folder
+### - Navigate into the App Folder
 <pre>cd myfirstreact</pre>
 
-- Open in Visual Studio Code
+### - Open in Visual Studio Code
 
 <pre>code .</pre>
 
-- Modify App.js
-<pre>Open src/App.js</pre>
+### - Modify App.js
 
+**Open src/App.js** 
 Replace existing content with:
 
 ```jsx
 function App() {
   return (
-    <h1>Welcome to the first session of React</h1>
+    <div>
+      <h1>Welcome to the first session of React</h1>
+    </div>
   );
 }
 
 export default App;
 ```
 
-- Run the App
+### - Run the App
 <pre>npm start</pre>
 
-- View Output
+### - View Output
 <pre>Open browser and go to: http://localhost:3000</pre>
 
-# 📷 Output Screenshots
+## 📷 Output Screenshots
 - Found in /output/ folder:
 
     - app-creation-success.png – CLI showing successful app creation
@@ -90,7 +93,7 @@ export default App;
 
     - browser-output.png – Final rendered result in the browser
 
-# ✅ Completion Status
+## ✅ Completion Status
 - Project successfully created
 
 - Welcome message displayed as expected
