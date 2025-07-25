@@ -38,7 +38,7 @@ This lab helps understand how to apply styles in React using both CSS Modules an
 
 - Conditional styling based on data
 
->*📝 All objective answers are available in <pre>5. ReactJS-HOL.docx.</pre>*
+>*📝 All objective answers are available in 5. ReactJS-HOL.docx.*
 
 ## ⚙️ Prerequisites
 - Node.js and npm
@@ -46,19 +46,20 @@ This lab helps understand how to apply styles in React using both CSS Modules an
 - Visual Studio Code
 
 ## 🚀 Steps Followed
-- Unzip and Set Up the React App
+### - Unzip and Set Up the React App
 (Since No Zip was Attached with the Exercise file I have created the react app cohorttracker)
 
-- Unzip the given project folder.
+### - Unzip the given project folder.
 
-- Open terminal and run:
+### - Open terminal and run:
 <pre>npm install</pre>
 
-- Create CSS Module
+### - Create CSS Module
 Inside src/, create a new file:
-CohortDetails.module.css
+****CohortDetails.module.css****
 
 Add the following styles:
+
 ```css
 .box {
   width: 300px;
@@ -73,7 +74,9 @@ dt {
   font-weight: 500;
 }
 ```
-- Edit CohortDetails.js Component
+
+- Edit ****CohortDetails.js**** Component
+ 
 ```jsx
 import React from "react";
 import styles from "./CohortDetails.module.css";
@@ -98,7 +101,9 @@ function CohortDetails({ name, status, duration }) {
 
 export default CohortDetails;
 ```
-- Render in App.js
+
+### - Render in App.js
+
 ```jsx
 import React from "react";
 import CohortDetails from "./CohortDetails";
@@ -114,10 +119,11 @@ function App() {
 
 export default App;
 ```
-- Run the App
+
+### - Run the App
 <pre>npm start</pre>
 
-- View in Browser
+### - View in Browser
 <pre>Visit: http://localhost:3000</pre>
 
 ## 📷 Output Screenshots
