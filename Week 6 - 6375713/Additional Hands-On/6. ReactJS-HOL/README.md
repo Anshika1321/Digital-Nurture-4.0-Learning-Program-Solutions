@@ -82,10 +82,8 @@ class Trainer {
 export default Trainer;
 ```
 - Mock Data
-  
-****File: TrainersMock.js****
-  
-Create an array of Trainer objects and export it for use in list/details components.
+  ****File: TrainersMock.js****
+  Create an array of Trainer objects and export it for use in list/details components.
 ```jsx
 const trainers = [
   {
@@ -110,7 +108,7 @@ export default trainers;
 ```
 - Create Components
 
-    - Home.js: Displays a welcome/home message.
+    ****- Home.js:**** Displays a welcome/home message.
 ```jsx
 import React from 'react';
 
