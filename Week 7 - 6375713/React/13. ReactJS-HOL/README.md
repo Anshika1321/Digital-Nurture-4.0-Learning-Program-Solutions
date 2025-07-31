@@ -1,7 +1,3 @@
-Here's the structured and professional **README.md** file for **`13. ReactJS-HOL.docx`**, following the same format as your earlier reference:
-
----
-
 # ReactJS Hands-On Lab – 13. ReactJS-HOL
 
 ## 📁 Folder Structure
@@ -139,4 +135,3 @@ Found in `/output/` folder:
 
 ---
 
-Ready for the next doc whenever you are!
