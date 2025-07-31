@@ -1,7 +1,3 @@
-Here's a `README.md` tailored for your attached Word file (`9. ReactJS-HOL.docx`), modeled after your reference format:
-
----
-
 # ReactJS Hands-On Lab – 9. ReactJS-HOL
 
 <pre>9.ReactJS-HOL/ 
