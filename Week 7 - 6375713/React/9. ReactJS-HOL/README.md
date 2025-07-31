@@ -1,32 +1,33 @@
 # ReactJS Hands-On Lab – 9. ReactJS-HOL
 
 ## 📁 Folder Structure
-<pre>9.ReactJS-HOL/ 
-│ ├── 📂 codes/ # Contains source code snippets of React components 
-│ ├── App.js # Main component with conditional rendering using flag 
-│ ├── EvenPlayers.js # Renders players in even team using ES6 destructuring 
-│ ├── ListofIndianPlayers.js # Merges and displays T20 and Ranji players 
-│ ├── ListofPlayers.js # Displays all players and their scores using map() 
-│ ├── OddPlayers.js # Renders players in odd team using ES6 destructuring 
-│ └── Scorebelow70.js # Filters players with score < 70 using arrow functions 
+<pre>9.ReactJS-HOL/
 │
-│ ├── 📂 output/ # Screenshots captured during execution 
-│ ├── app-creation-success.png # CLI screenshot of successful app creation 
-│ ├── flag-true-output.png # Output when flag is set to true 
-│ ├── flag-false-output.png # Output when flag is set to false 
-│ └── webpack-compiled-success.png # Webpack successfully compiled the app 
+├── 📂 codes/                         # Contains source code snippets of React components
+│   ├── App.js                       # Main component with conditional rendering using flag
+│   ├── EvenPlayers.js               # Renders players in even team using ES6 destructuring
+│   ├── ListofIndianPlayers.js       # Merges and displays T20 and Ranji players
+│   ├── ListofPlayers.js             # Displays all players and their scores using map()
+│   ├── OddPlayers.js                # Renders players in odd team using ES6 destructuring
+│   └── Scorebelow70.js              # Filters players with score < 70 using arrow functions
 │
-│ ├── 📂 cricketapp/ # Full React project created during the lab 
-│ ├── node_modules/ 
-│ ├── public/ 
-│ ├── src/ 
-│ │ ├── App.js # App root file with conditional rendering 
-│ │ ├── ListofPlayers.js # Displays list of players and their scores 
-│ │ └── IndianPlayers.js # Displays odd/even team using destructuring 
-│ └── package.json 
+├── 📂 output/                        # Screenshots captured during execution
+│   ├── app-creation-success.png     # CLI screenshot of successful app creation
+│   ├── flag-true-output.png         # Output when flag is set to true
+│   ├── flag-false-output.png        # Output when flag is set to false
+│   └── webpack-compiled-success.png # Webpack successfully compiled the app
 │
-│ ├── 📄 9. ReactJS-HOL.docx # Word file containing objective answers and instructions 
-└── 📄 README.md # This file</pre>
+├── 📂 cricketapp/                   # Full React project created during the lab
+│   ├── node_modules/
+│   ├── public/
+│   ├── src/
+│   │   ├── App.js                   # App root file with conditional rendering
+│   │   ├── ListofPlayers.js        # Displays list of players and their scores
+│   │   └── IndianPlayers.js        # Displays odd/even team using destructuring
+│   └── package.json
+│
+├── 📄 9. ReactJS-HOL.docx           # Word file containing objective answers and instructions
+└── 📄 README.md                     # This file</pre>
 
 ## 📌 Objective
 
@@ -106,9 +107,10 @@ Open browser at: <pre>[http://localhost:3000](http://localhost:3000)</pre>
 
 * Found in `/output/` folder:
 
+  * `app-creation-success.png` – CLI screenshot of successful app creation
   * `flag-true-output.png` – Output with flag set to true
   * `flag-false-output.png` – Output with flag set to false
-  * `app-view.png` – Final combined view
+  * `webpack-compiled-success.png` – VS code window
 
 ## ✅ Completion Status
 
