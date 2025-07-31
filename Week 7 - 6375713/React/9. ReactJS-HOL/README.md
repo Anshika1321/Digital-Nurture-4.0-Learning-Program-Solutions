@@ -1,5 +1,6 @@
 # ReactJS Hands-On Lab – 9. ReactJS-HOL
 
+## 📁 Folder Structure
 <pre>9.ReactJS-HOL/ 
 │ ├── 📂 codes/ # Contains source code snippets of React components 
 │ ├── App.js # Main component with conditional rendering using flag 
