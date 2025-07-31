@@ -4,14 +4,14 @@
 
 ```
 11.ReactJS-HOL/
-├── codes/                       # Raw or separate code snippets (optional)
+├──📂 codes/                       # Raw or separate code snippets (optional)
 │   ├── App.js
 │   ├── ClickMe.js
 │   ├── Counter.js
 │   ├── Welcome.js
 │   └── CurrencyConvertor.js
 │
-├── output/                      # Screenshots of working outputs
+├──📂 output/                      # Screenshots of working outputs
 │   ├── app-creation-success.png
 │   ├── webpack-compiled-success.png
 │   ├── counter-output.png
@@ -20,7 +20,7 @@
 │   ├── welcome-button-output.png
 │   └── currency-convertor-output.png
 │
-├── eventexamplesapp/            # Main React project folder
+├──📂 eventexamplesapp/            # Main React project folder
 │   ├── package.json             # Project metadata and dependencies
 │   ├── public/                  # Static files (HTML, icons, etc.)
 │   └── src/
@@ -31,8 +31,8 @@
 │           ├── Welcome.js           # Function with argument example
 │           └── CurrencyConvertor.js # Currency conversion component
 │
-├── README.md                     # Summary and setup instructions
-├── 11. ReactJS-HOL.docx         # Lab guide with objectives and steps
+├──📄 README.md                     # Summary and setup instructions
+├──📄 11. ReactJS-HOL.docx         # Lab guide with objectives and steps
 
 ```
 
