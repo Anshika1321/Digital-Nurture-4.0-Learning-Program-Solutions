@@ -75,7 +75,7 @@ Each section is organized into self-contained exercises including full Maven pro
         │   └── 📁 accounts       # Full Maven project – Account service
         │
         ├── 📁 loan-microservice
-        │   ├── 📁 code           # Java source files (controller, config, etc)
+        │   ├── 📁 code           # Java source files (controller, config, etc.)
         │   ├── 📁 output         # Postman/console screenshots
         │   └── 📁 loans          # Full Maven project – Loan service
         │
