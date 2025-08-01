@@ -18,7 +18,7 @@
 │   ├── Theme Switch Output.png           # Output screenshot demonstrating theme switching
 │   └── Employees List Output.png         # Output screenshot of the Employees List component
 │
-├── 📂 employeeapp/                    # Complete working app using React Context API
+├── 📂 employeesapp/                    # Complete working app using React Context API
 │   ├── node_modules/
 │   ├── public/
 │   ├── src/
