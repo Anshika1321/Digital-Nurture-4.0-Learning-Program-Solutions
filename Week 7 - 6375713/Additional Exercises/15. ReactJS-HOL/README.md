@@ -117,12 +117,12 @@ export default ComplaintRegister;
 📄 **Path**: `src/App.js`
 
 ```jsx
-import ComplaintRegister from './components/ComplaintRegister';
+import React from "react";
+import ComplaintRegister from "./ComplaintRegister";
 
 function App() {
   return (
     <div>
-      <h2>Register your complaints here!!!</h2>
       <ComplaintRegister />
     </div>
   );
