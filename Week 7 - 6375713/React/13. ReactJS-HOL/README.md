@@ -2,136 +2,125 @@
 
 ## 📁 Folder Structure
 
-<pre>13.ReactJS-HOL/
+<pre>
+13.ReactJS-HOL/
 │
-├── 📂 codes/                   # Contains reusable component code
-│   ├── App.js                 
-│   ├── BookDetails.js         
-│   ├── BlogDetails.js         
-│   └── CourseDetails.js       
+├── 📂 codes/                     # Contains reusable component code
+│   ├── App.js                    # Parent container rendering all details
+│   ├── BookDetails.js            # Displays book section using JSX
+│   ├── BlogDetails.js            # Conditionally renders blog info
+│   ├── CourseDetails.js          # Renders list using map() with keys
+│   └── data.js                   # Static data passed to components
 │
-├── 📂 output/                  # Screenshots captured during execution
-│   ├── app-creation-success.png
-│   ├── conditional-book-output.png
-│   ├── conditional-blog-output.png
-│   ├── conditional-course-output.png
-│   └── list-map-render-output.png
+├── 📂 output/                    # Screenshots captured during execution
+│   ├── app-creation-success.png         # React app successfully created
+│   ├── browser-output.png               # Combined component rendering in browser
+│   └── webpack-compiled-success.png     # Webpack compilation success confirmation
 │
-├── 📂 bloggerapp/              # Fully working React project
+├── 📂 bloggerapp/                # Fully working React project
 │   ├── node_modules/
 │   ├── public/
 │   ├── src/
-│   │   ├── App.js             
+│   │   ├── App.js 
+│   │   ├── data.js
 │   │   └── components/
 │   │       ├── BookDetails.js 
 │   │       ├── BlogDetails.js 
 │   │       └── CourseDetails.js
 │   └── package.json
 │
-├── 📄 13. ReactJS-HOL.docx     # Word file with learning objectives and exercises
-└── 📄 README.md                # This file</pre>
+├── 📄 13. ReactJS-HOL.docx       # Word file with objectives and instructions
+└── 📄 README.md                  # This file
+</pre>
 
 ---
 
 ## 📌 Objective
 
-This lab focuses on rendering components conditionally and using lists and keys effectively in React applications.
+This hands-on lab focuses on implementing various methods of **conditional rendering** and **list rendering** in React using the `map()` function and `key` props.
 
 ---
 
 ## ✅ What You'll Learn
 
-* Various methods of **conditional rendering**
-* How to **render multiple components**
-* Creating and using a **list component**
-* Importance and usage of **keys** in React
-* Extracting child components with keys
-* Using the **map()** function in JSX for list rendering
+- Multiple methods of conditional rendering
+- Rendering multiple components dynamically
+- Creating and displaying lists using `map()`
+- Importance of keys in React
+- Extracting reusable child components
 
-> *📝 Full explanation and theory are documented in `13. ReactJS-HOL.docx`.*
+> *📝 Full explanations and exercises are available in `13. ReactJS-HOL.docx`*
 
 ---
 
 ## ⚙️ Prerequisites
 
-* Node.js
-* npm
-* Visual Studio Code
+- Node.js
+- npm
+- Visual Studio Code
 
 ---
 
 ## 🚀 Steps Followed
 
-### - Install Node.js and npm
+### 1. Install Node.js and npm  
+👉 Download from: https://nodejs.org/en/download  
 
-<pre>https://nodejs.org/en/download</pre>
+### 2. Create the React App  
+```bash
+npx create-react-app bloggerapp
+````
 
-### - Create the React App
+### 3. Navigate to Project Folder
 
-<pre>npx create-react-app bloggerapp</pre>
+```bash
+cd bloggerapp
+```
 
-### - Navigate to App Folder
+### 4. Open in VS Code
 
-<pre>cd bloggerapp</pre>
-
-### - Open in VS Code
-
-<pre>code .</pre>
+```bash
+code .
+```
 
 ---
 
-### - Create Required Components
+### 5. Create Required Components
 
-📁 In `src/components/`, create the following:
+In `src/components/`, create:
 
-1. `BookDetails.js` – Displays book information conditionally
-2. `BlogDetails.js` – Shows blog data based on a toggle or boolean
-3. `CourseDetails.js` – Renders list of courses using **map()** with **keys**
+* `BookDetails.js` – Displays book info conditionally
+* `BlogDetails.js` – Renders blog details using toggle logic
+* `CourseDetails.js` – Renders course list using `map()` and keys
+* `data.js` – Contains data arrays or objects
 
-Update `App.js` to control visibility using different conditional rendering methods:
+Update `App.js` to control rendering using:
 
 * `if/else` statements
 * Ternary operators
-* Logical `&&` rendering
+* Logical `&&` expressions
 * Element variables
-
----
-
-### - Example: List Rendering Using map()
-
-```jsx
-const courses = ['React', 'Node', 'MongoDB'];
-
-return (
-  <ul>
-    {courses.map((course, index) => (
-      <li key={index}>{course}</li>
-    ))}
-  </ul>
-);
-```
 
 ---
 
 ## 📷 Output Screenshots
 
-Found in `/output/` folder:
+Available in the `/output/` folder:
 
-* `app-creation-success.png` – Successful React app creation
-* `conditional-book-output.png` – Output of Book component conditionally rendered
-* `conditional-blog-output.png` – Conditional rendering of Blog component
-* `conditional-course-output.png` – Rendered output of Course component
-* `list-map-render-output.png` – Result of list rendering using map() and keys
+* `app-creation-success.png` – React app scaffold created successfully
+* `browser-output.png` – Final output showing all components rendered
+* `webpack-compiled-success.png` – Screenshot showing successful build/compilation
 
 ---
 
 ## ✅ Completion Status
 
-* All components created and conditionally rendered
-* List rendering implemented with keys and map function
-* Different approaches to conditional rendering demonstrated
-* Output screenshots included
-* Word document `13. ReactJS-HOL.docx` contains all theory and instructions
+* ✅ App "bloggerapp" created and running
+* ✅ Book, Blog, and Course components implemented
+* ✅ Conditional rendering techniques demonstrated
+* ✅ List rendering with keys implemented
+* ✅ Screenshots provided
+* ✅ Theory covered in `13. ReactJS-HOL.docx`
 
 ---
 
