@@ -7,6 +7,7 @@
 │
 ├── 📂 codes/                     # Contains reusable component code
 │   ├── App.js                    # Parent container rendering all details
+│   ├── App.css                   # Styling using css
 │   ├── BookDetails.js            # Displays book section using JSX
 │   ├── BlogDetails.js            # Conditionally renders blog info
 │   ├── CourseDetails.js          # Renders list using map() with keys
