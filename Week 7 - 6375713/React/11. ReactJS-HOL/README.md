@@ -3,15 +3,16 @@
 ## 📁 Folder Structure
 
 ```
-11.ReactJS-HOL/
-├──📂 codes/                       # Raw or separate code snippets (optional)
-│   ├── App.js
-│   ├── ClickMe.js
-│   ├── Counter.js
-│   ├── Welcome.js
-│   └── CurrencyConvertor.js
+
+<pre>11.ReactJS-HOL/
+├── 📂 codes/                        # Raw/separate component snippets (with JSX tags)
+│   ├── App.js                         # Root component rendering all other components
+│   ├── ClickMe.js                     # Handles onClick event to display a message
+│   ├── Counter.js                     # Handles increment/decrement with method binding
+│   ├── Welcome.js                     # Button passing a string argument to a handler
+│   └── CurrencyConvertor.js           # Converts INR to Euro using a button click
 │
-├──📂 output/                      # Screenshots of working outputs
+├── 📂 output/                       # Screenshots showing app outputs
 │   ├── app-creation-success.png
 │   ├── webpack-compiled-success.png
 │   ├── counter-output.png
@@ -20,63 +21,62 @@
 │   ├── welcome-button-output.png
 │   └── currency-convertor-output.png
 │
-├──📂 eventexamplesapp/            # Main React project folder
-│   ├── package.json             # Project metadata and dependencies
-│   ├── public/                  # Static files (HTML, icons, etc.)
+├── 📂 eventexamplesapp/             # Main React app folder
+│   ├── package.json                 # Project metadata and dependencies
+│   ├── public/                      # Static files (HTML, icons, etc.)
 │   └── src/
-│       ├── App.js               # Root React component
-│       └── components/          # All custom React components
-│           ├── ClickMe.js           # Synthetic event (onClick) example
-│           ├── Counter.js           # Increment/Decrement counter
-│           ├── Welcome.js           # Function with argument example
-│           └── CurrencyConvertor.js # Currency conversion component
+│       ├── App.js                   # Root React component
+│       └── components/
+│           ├── ClickMe.js               # onClick event example
+│           ├── Counter.js               # Counter with multiple method binding
+│           ├── Welcome.js               # Button with function argument
+│           └── CurrencyConvertor.js     # Input and conversion logic
 │
-├──📄 README.md                     # Summary and setup instructions
-├──📄 11. ReactJS-HOL.docx         # Lab guide with objectives and steps
+├── 📄 11. ReactJS-HOL.docx           # Lab guide with objectives and steps
+└── 📄 README.md                      # This file</pre>
 
-```
+````
 
 ---
 
 ## 📌 Objective
 
-This lab focuses on React event handling concepts such as using event listeners, synthetic events, passing arguments in event handlers, and method binding using the `this` keyword.
+This lab focuses on **React event handling**, including using synthetic events, passing arguments to handlers, handling input, and applying the `this` keyword with method binding.
 
 ---
 
 ## ✅ What You'll Learn
 
-* What are React events and event handlers
-* React's SyntheticEvent system
-* Naming conventions for React events
-* Handling user interactions via `onClick`, `onChange`, etc.
-* Using `this` and method binding in event handlers
+- How React handles events
+- What is a synthetic event in React
+- How to define and use event handlers
+- Naming conventions in React events
+- Using the `this` keyword and function binding
+- Passing arguments to event handlers
 
-> 📝 Refer to **11. ReactJS-HOL.docx** for theoretical concepts and explanations.
+>*📝 Refer to `11. ReactJS-HOL.docx` for theoretical background and steps.*
 
 ---
 
 ## ⚙️ Prerequisites
 
-* Node.js
-* npm
-* Visual Studio Code
+- Node.js
+- npm
+- Visual Studio Code
 
 ---
 
 ## 🚀 Steps Followed
 
-### 1. Install Node.js and npm
+### 1. Install Node.js and npm  
+👉 Download from: https://nodejs.org/en/download  
 
-Download from: [https://nodejs.org/en/download](https://nodejs.org/en/download)
-
-### 2. Create React App
-
+### 2. Create the React App  
 ```bash
 npx create-react-app eventexamplesapp
-```
+````
 
-### 3. Navigate to Project
+### 3. Navigate to the Project Folder
 
 ```bash
 cd eventexamplesapp
@@ -88,31 +88,39 @@ cd eventexamplesapp
 code .
 ```
 
-### 5. Create Components
+---
+
+### 5. Create Components in `src/components/`
 
 * **Counter.js**
 
-  * Two buttons: "Increment" and "Decrement"
-  * `Increment` button triggers multiple functions: increment logic and a greeting message
-  * Demonstrates use of `this` keyword and method binding
+  * Two buttons: *Increment* and *Decrement*
+  * `Increment` button invokes:
+
+    * Function to increase count
+    * Function to say hello (demonstrates multiple handlers + method binding)
 
 * **Welcome.js**
 
   * A button labeled "Say Welcome"
-  * Calls a function with "welcome" passed as an argument
+  * Calls a function with `"welcome"` passed as an argument
 
 * **ClickMe.js**
 
-  * Button triggers an `onClick` event to show "I was clicked"
+  * Button with `onClick` that shows `"I was clicked"` (synthetic event)
 
 * **CurrencyConvertor.js**
 
-  * Input for INR and conversion button
-  * Handles click event to convert INR to Euro
+  * Input for INR and a Convert button
+  * Converts value to Euro using a click event
+
+---
 
 ### 6. Combine Components in `App.js`
 
-Render all components in a single page layout.
+Import and render all created components on a single page.
+
+---
 
 ### 7. Run the App
 
@@ -120,33 +128,34 @@ Render all components in a single page layout.
 npm start
 ```
 
-### 8. View Output
+### 8. View in Browser
 
-Open browser at: [http://localhost:3000](http://localhost:3000)
+Go to: [http://localhost:3000](http://localhost:3000)
 
 ---
 
 ## 📷 Output Screenshots
 
-Located in the `/output/` folder:
+Located in `/output/` folder:
 
-* `app-creation-success.png` – App created successfully
-* `counter-output.png` – Shows working increment/decrement
-* `welcome-button-output.png` – Button with argument-based event handler
-* `clickme-button-output.png` – "i was clicked" message display
-* `increment-button-output.png`- increment button invoking multiple methods (e.g., increase value + log message)
-* `currency-convertor-output.png` – Currency conversion result
+* `app-creation-success.png` – App scaffold created
+* `webpack-compiled-success.png` – Successful Webpack compilation
+* `counter-output.png` – Working increment/decrement buttons
+* `increment-button-output.png` – Increment triggering multiple functions
+* `clickme-button-output.png` – Output from synthetic `onClick` event
+* `welcome-button-output.png` – Button with argument-passing function
+* `currency-convertor-output.png` – INR to Euro conversion result
 
 ---
 
 ## ✅ Completion Status
 
-* React app **eventexamplesapp** successfully created
-* All components created and event handlers implemented
-* Functional event handling demonstrated using React’s SyntheticEvent
-* `this` keyword usage and method binding explained
-* Outputs validated with screenshots
-* Objective responses covered in `11. ReactJS-HOL.docx`
+* ✅ React app `eventexamplesapp` created and configured
+* ✅ All components built and tested
+* ✅ Event handling through multiple patterns demonstrated
+* ✅ `this` keyword and method binding used appropriately
+* ✅ Input + synthetic events handled
+* ✅ Screenshots included for verification
+* ✅ Theory completed in `11. ReactJS-HOL.docx`
 
 ---
-
