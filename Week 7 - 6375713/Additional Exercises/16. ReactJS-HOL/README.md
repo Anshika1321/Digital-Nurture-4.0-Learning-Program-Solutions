@@ -65,82 +65,91 @@ code .</pre>
 
 📄 Path: src/components/Register.js
 ```jsx
-import React, { useState } from 'react';
+import React, { Component } from "react";
 
-const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+class Register extends Component {
+  constructor() {
+    super();
+    this.state = {
+      name: "",
+      email: "",
+      password: "",
+    };
+  }
 
-const Register = () => {
-  const [formData, setFormData] = useState({
-    fullName: '',
-    email: '',
-    password: ''
-  });
+  handleChange = (event) => {
+    this.setState({ [event.target.name]: event.target.value });
+  };
 
-  const [errors, setErrors] = useState({
-    fullName: '',
-    email: '',
-    password: ''
-  });
+  handleSubmit = (event) => {
+    const { name, email, password } = this.state;
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    let tempErrors = { ...errors };
-
-    switch (name) {
-      case 'fullName':
-        tempErrors.fullName = value.length < 5 ? 'Full Name must be at least 5 characters.' : '';
-        break;
-      case 'email':
-        tempErrors.email = emailRegex.test(value) ? '' : 'Email format is invalid.';
-        break;
-      case 'password':
-        tempErrors.password = value.length < 8 ? 'Password must be at least 8 characters.' : '';
-        break;
-      default:
-        break;
+    if (name.length < 5) {
+      alert("Full Name must be 5 characters long!");
+      event.preventDefault();
+      return;
     }
 
-    setErrors(tempErrors);
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const validateForm = () => {
-    return Object.values(errors).every(err => err === '') &&
-           Object.values(formData).every(field => field !== '');
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (validateForm()) {
-      alert('Valid Form');
-    } else {
-      let alertMsg = '';
-      if (errors.fullName) alertMsg += errors.fullName + '\n';
-      if (errors.email) alertMsg += errors.email + '\n';
-      if (errors.password) alertMsg += errors.password + '\n';
-      if (!alertMsg.trim()) alertMsg = 'Please fill in all fields.';
-      alert(alertMsg.trim());
+    if (!email.includes("@") || !email.includes(".")) {
+      alert("Email is not valid!");
+      event.preventDefault();
+      return;
     }
+
+    if (password.length < 8) {
+      alert("Password must be at least 8 characters long!");
+      event.preventDefault();
+      return;
+    }
+
+    alert("Registration successful!");
+    event.preventDefault();
   };
 
-  return (
-    <form onSubmit={handleSubmit} noValidate>
-      <label>Name:</label><br/>
-      <input type="text" name="fullName" value={formData.fullName} onChange={handleChange} /><br/>
-      {errors.fullName && <span style={{ color: 'red' }}>{errors.fullName}</span>}<br/>
-
-      <label>Email:</label><br/>
-      <input type="email" name="email" value={formData.email} onChange={handleChange} /><br/>
-      {errors.email && <span style={{ color: 'red' }}>{errors.email}</span>}<br/>
-
-      <label>Password:</label><br/>
-      <input type="password" name="password" value={formData.password} onChange={handleChange} /><br/>
-      {errors.password && <span style={{ color: 'red' }}>{errors.password}</span>}<br/>
-
-      <button type="submit">Submit</button>
-    </form>
-  );
-};
+  render() {
+    return (
+      <div style={{ textAlign: "center", marginTop: "50px" }}>
+        <h2 style={{ color: "red" }}>Register Here!!!</h2>
+        <form onSubmit={this.handleSubmit}>
+          <div>
+            <label>Name:</label>{" "}
+            <input
+              type="text"
+              name="name"
+              value={this.state.name}
+              onChange={this.handleChange}
+              required
+            />
+          </div>
+          <br />
+          <div>
+            <label>Email:</label>{" "}
+            <input
+              type="email"
+              name="email"
+              value={this.state.email}
+              onChange={this.handleChange}
+              required
+            />
+          </div>
+          <br />
+          <div>
+            <label>Password:</label>{" "}
+            <input
+              type="password"
+              name="password"
+              value={this.state.password}
+              onChange={this.handleChange}
+              required
+            />
+          </div>
+          <br />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    );
+  }
+}
 
 export default Register;
 ```
@@ -148,13 +157,12 @@ export default Register;
 ### 3️⃣ Update App.js
 📄 Path: src/App.js
 ```jsx
-import React from 'react';
-import Register from './components/Register';
+import React from "react";
+import Register from "./Register";
 
 function App() {
   return (
-    <div className="App">
-      <h2>Register Here!!!</h2>
+    <div>
       <Register />
     </div>
   );
