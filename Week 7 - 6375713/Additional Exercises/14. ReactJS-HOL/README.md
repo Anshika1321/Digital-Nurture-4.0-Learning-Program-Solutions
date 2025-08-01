@@ -35,13 +35,13 @@
 
 ---
 
-### 📌 Objective
+## 📌 Objective
 
 This lab introduces the **React Context API** as a scalable solution to avoid "prop drilling" when sharing data (like themes) across deeply nested components. 
 
 ---
 
-### ✅ What You'll Learn
+## ✅ What You'll Learn
 
 * Explain the need and benefits of React Context API. 
 * Working with `createContext()`. 
@@ -56,7 +56,7 @@ This lab introduces the **React Context API** as a scalable solution to avoid "p
 
 ---
 
-### ⚙️ Prerequisites
+## ⚙️ Prerequisites
 
 The following is required to complete this hands-on lab:
 * Node.js
@@ -69,7 +69,7 @@ The following is required to complete this hands-on lab:
 
 The estimated time to complete this lab: 30 minutes. 
 
-#### - Download & Setup the Application
+### - Download & Setup the Application
 
 1.  Unzip the application and open it using VS Code.
 2.  Go to the terminal and execute the `npm install` command to restore all the node modules. 
@@ -78,7 +78,7 @@ The estimated time to complete this lab: 30 minutes.
     npm install
     ``` 
 
-#### - Start the Application
+### - Start the Application
 
 - Run the application once to see the output. Use `npm start` command.
 
@@ -109,8 +109,9 @@ npm start
 
     - Use the variable to pass the className for the buttons. 
 
-📷 Output Screenshots
-Available in the /output/ folder:
+## 📷 Output Screenshots
+
+- Available in the /output/ folder:
 
     - Webpack Compiled Success.png – Project setup confirmation
 
@@ -124,7 +125,7 @@ Available in the /output/ folder:
 
     - Employees List Output.png – Specific view of the Employees List component
 
-✅ Completion Status
+## ✅ Completion Status
 - App successfully refactored to use React Context API.
 
 - All props removed in favor of context-based value sharing.
