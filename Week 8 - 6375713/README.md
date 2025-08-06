@@ -1,10 +1,7 @@
----
-
 # 📘 Week 8 – Git Hands-On Lab Summary
 
 This week focuses on mastering Git through five hands-on labs, ranging from basic repository setup to advanced branching, merging, and conflict resolution. Each lab is documented in `.docx` format with steps, commands, and screenshots. Final GitLab repository screenshots are included for proof of successful push and merge operations.
 
----
 
 ## 📁 Folder Structure
 
